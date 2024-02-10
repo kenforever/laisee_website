@@ -51,7 +51,7 @@ function Page() {
     setLoading(true);
     try {
       let open = await writeContract({
-        address: "0x1bB178e9d12247b80485bb2f10bF578f1fde2A25",
+        address: "0x6541fa48CCE2582281882edb8016AF9EBA84aB3A",
         functionName: "OpenLaiSee",
         abi: abi,
       });
@@ -99,7 +99,7 @@ function Page() {
           <meta property="og:type" content="website" />
           <meta property="og:title" content="利是逗來！" />
           <meta property="og:description" content="新年快樂攞利是！" />
-          <meta property="og:image" content="https://i.imgur.com/a/YmdaFww.jpg" />
+          <meta property="og:image" content="https://i.imgur.com/YmdaFww.jpg" />
 
 
         </Head>
