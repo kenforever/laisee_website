@@ -93,7 +93,7 @@ function Page() {
       <div className="${styles.container} ">
         <Head>
           <title>利是逗來！</title>
-          <link rel="icon" href="url('/public/new_year_img.png')" />
+          <link rel="icon" href="url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.0/72x72/1f9e7.png')" />
           <meta property="og:url" content="https://laisee.kenforever.cc" />
           <meta property="og:type" content="website" />
           <meta property="og:title" content="利是逗來！" />
