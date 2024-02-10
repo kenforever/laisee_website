@@ -99,7 +99,7 @@ function Page() {
           <meta property="og:type" content="website" />
           <meta property="og:title" content="利是逗來！" />
           <meta property="og:description" content="新年快樂攞利是！" />
-          <meta property="og:image" content="https://imgur.com/a/YmdaFww" />
+          <meta property="og:image" content="https://i.imgur.com/a/YmdaFww.jpg" />
 
 
         </Head>
