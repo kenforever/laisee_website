@@ -94,7 +94,7 @@ function Page() {
       <div className="${styles.container} ">
         <Head>
           <title>利是逗來！</title>
-          <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧧</text></svg>" />
+          <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.0/72x72/1f9e7.png" />
           <meta property="og:url" content="https://laisee.kenforever.cc" />
           <meta property="og:type" content="website" />
           <meta property="og:title" content="利是逗來！" />
