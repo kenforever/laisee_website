@@ -15,6 +15,7 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
     arbitrum,
     sepolia,
   ],
+  //@ts-ignore
   [infuraProvider({ apiKey: process.env.INFURA_PROVIDER_KEY })]
 );
 

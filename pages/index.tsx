@@ -76,6 +76,7 @@ function Page() {
           laisee_count: decoded[1].toString(),
           laisee_timestamp: decoded[2].toString(),
         },
+        //@ts-ignore
         ...laiseeData,
       ]);
       setOpen(true)
