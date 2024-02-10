@@ -9,7 +9,7 @@ import {
 } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 import { infuraProvider } from 'wagmi/providers/infura'
-import { env } from 'process';
+
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
   [
@@ -21,7 +21,8 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
 
 const { connectors } = getDefaultWallets({
   appName: 'RainbowKit App',
-  projectId: `${env.WALLETCONNECT_PROJECT_ID}`,
+  //@ts-ignore
+  projectId: process.env.WALLETCONNECT_PROJECT_ID,
   chains,
 });
 
