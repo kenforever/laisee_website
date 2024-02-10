@@ -1,3 +1,13 @@
+# 🧧LaiSee Website
+
+新年快樂！利是逗來！
+
+this is a on-chain 🧧LaiSee ( 利是，紅包 ) build on EVM. 
+
+for the contract, please visit [this repo](https://github.com/kenforever/laisee_contract).
+
+---------------------
+
 This is a [RainbowKit](https://rainbowkit.com) + [wagmi](https://wagmi.sh) + [Next.js](https://nextjs.org/) project bootstrapped with [`create-rainbowkit`](https://github.com/rainbow-me/rainbowkit/tree/main/packages/create-rainbowkit).
 
 ## Getting Started

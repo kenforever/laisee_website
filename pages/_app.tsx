@@ -14,7 +14,6 @@ import { env } from 'process';
 const { chains, publicClient, webSocketPublicClient } = configureChains(
   [
     optimism,
-    sepolia,
   ],
   //@ts-ignore
   [publicProvider()]

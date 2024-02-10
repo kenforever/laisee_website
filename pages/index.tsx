@@ -12,10 +12,9 @@ import {
 import styles from "../styles/Home.module.css";
 import abi from "./abi.json";
 import { useState, useEffect, use } from "react";
-import laiseebg from "./laiseebg.jpg";
 import Laisee from "../components/ui/laisee";
 import { decodeAbiParameters, formatUnits } from "viem";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 
 function Page() {
   const [loading, setLoading] = useState(false);
@@ -51,7 +50,7 @@ function Page() {
     setLoading(true);
     try {
       let open = await writeContract({
-        address: "0x6541fa48CCE2582281882edb8016AF9EBA84aB3A",
+        address: "0xD3D9617F2e3eF8dD1f6de5c347373176FF56f418",
         functionName: "OpenLaiSee",
         abi: abi,
       });
@@ -79,7 +78,7 @@ function Page() {
         //@ts-ignore
         ...laiseeData,
       ]);
-      setOpen(true)
+      setOpen(true);
     } catch (e) {
       console.error(e);
     } finally {
@@ -94,14 +93,12 @@ function Page() {
       <div className="${styles.container} ">
         <Head>
           <title>利是逗來！</title>
-          <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.0/72x72/1f9e7.png" />
+          <link rel="icon" href="url('/public/new_year_img.png')" />
           <meta property="og:url" content="https://laisee.kenforever.cc" />
           <meta property="og:type" content="website" />
           <meta property="og:title" content="利是逗來！" />
           <meta property="og:description" content="新年快樂攞利是！" />
-          <meta property="og:image" content="https://i.imgur.com/YmdaFww.jpg" />
-
-
+          <meta property="og:image" content="https://i.imgur.com/nLSTEyJ.png" />
         </Head>
 
         <main className="flex flex-col items-center">
@@ -114,14 +111,21 @@ function Page() {
                 transition={{ delay: 0.1 }}
                 className="bg-red-500 bg-opacity-90 min-h-[560px] w-[340px] z-50 absolute"
               >
-              <h1 className="text-3xl font-bold mt-10 text-center text-yellow-300 pt-32">你收到了</h1>
-                <h1 className="text-3xl font-bold mt-10 text-center text-yellow-300">{laiseeData[0]?.laisee_amount} 個 ETH！</h1>
-                <h1 className="text-3xl font-bold mt-10 text-center text-yellow-300">新年快樂！</h1>
+                <h1 className="text-3xl font-bold mt-10 text-center text-yellow-300 pt-32">
+                  你收到了
+                </h1>
+                <h1 className="text-3xl font-bold mt-10 text-center text-yellow-300">
+                  {laiseeData[0]?.laisee_amount} 個 ETH！
+                </h1>
+                <h1 className="text-3xl font-bold mt-10 text-center text-yellow-300">
+                  新年快樂！
+                </h1>
                 <div className="flex flex-col items-center pt-100 bottom-8 left-28 absolute">
                   <button
                     className="bg-yellow-400 text-black h-28 w-28 rounded-full text-2xl "
                     onClick={() => setOpen(false)}
-                  >再來一個
+                  >
+                    再來一個
                   </button>
                 </div>
               </motion.div>
@@ -131,9 +135,7 @@ function Page() {
             <div className="w-[500px] h-[500px] z-20 absolute bottom-20 rounded-b-full opacity-25 bg-red-400"></div>
 
             <div className="z-30 w-full h-100%">
-              
               {/* <button className="bg-yellow-400 text-black h-28 w-28 rounded-full text-2xl absolute top-12 right-12" onClick={() => setOpen(true)}>open</button> */}
-
 
               {!isConnected && (
                 <div className="flex flex-col items-center pt-100 bottom-16 left-[6.5rem] absolute">
@@ -175,13 +177,17 @@ function Page() {
         </main>
 
         <footer className={styles.footer}>
-          <a
-            href="https://rainbow.me"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Made with ❤️ by your frens at 🌈
-          </a>
+          <p>
+            <a href="https://kenforever.eth.limo/" target="_blank" >Made with ❤️ by kenforever</a>
+            <a
+              href="https://github.com/kenforever/laisee_website"
+              target="_blank"
+              rel="noreferrer"
+              className="pt-4"
+            >
+              GitHub
+            </a>
+          </p>
         </footer>
       </div>
     </>
