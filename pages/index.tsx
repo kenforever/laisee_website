@@ -53,6 +53,7 @@ function Page() {
         address: "0xD3D9617F2e3eF8dD1f6de5c347373176FF56f418",
         functionName: "OpenLaiSee",
         abi: abi,
+        chainId: 10,
       });
       let tx_hash = open.hash;
       let result = await waitForTransaction({
