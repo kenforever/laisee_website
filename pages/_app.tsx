@@ -16,7 +16,7 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
     optimism,
   ],
   //@ts-ignore
-  [infuraProvider({ infuraId: '1e44e067e9324913859ccf802099fcac'})]
+  [infuraProvider({ apiKey: "1e44e067e9324913859ccf802099fcac" })]
 );
 
 const { connectors } = getDefaultWallets({
