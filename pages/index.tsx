@@ -50,7 +50,7 @@ function Page() {
     setLoading(true);
     try {
       let open = await writeContract({
-        address: "0xD3D9617F2e3eF8dD1f6de5c347373176FF56f418",
+        address: "0x7b78D06000583EBEc09F116A61dC8fC375014eb1",
         functionName: "OpenLaiSee",
         abi: abi,
         chainId: 10,
