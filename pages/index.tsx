@@ -81,6 +81,8 @@ function Page() {
       setOpen(true);
     } catch (e) {
       console.error(e);
+      //@ts-ignore
+      alert(e.message);
     } finally {
       setLoading(false);
     }
